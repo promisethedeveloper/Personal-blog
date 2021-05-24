@@ -1,0 +1,6 @@
+.button {
+	grid-area: btn;
+	color: red;
+	cursor: pointer;
+	font: 700 18px/1.6rem "Roboto", sans-serif;
+}

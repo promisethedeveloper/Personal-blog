@@ -1,0 +1,9 @@
+ul {
+	grid-area: nav;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	cursor: pointer;
+	list-style-type: none;
+	font: 700 18px/1.6rem "Roboto", sans-serif;
+}

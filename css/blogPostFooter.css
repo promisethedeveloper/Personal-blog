@@ -1,0 +1,16 @@
+footer {
+	color: white;
+	grid-area: ft;
+}
+
+.avatar {
+	margin: 50px 0 0 0;
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+}
+
+.social-sharing {
+	display: flex;
+	justify-content: flex-start;
+}

@@ -1,0 +1,8 @@
+.header {
+	grid-area: hd;
+	display: flex;
+	justify-content: center;
+	font: 700 18px/2.5rem "Roboto", sans-serif;
+	color: white;
+	margin: 0 0 10px 0;
+}

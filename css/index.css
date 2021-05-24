@@ -1,0 +1,125 @@
+@import "homePageNavBar.css";
+@import "homePageButton.css";
+@import "homePageHeader.css";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #151515;
+}
+
+.container {
+	display: grid;
+	background-color: #151515;
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: minmax(20px, auto);
+	padding: 0 30px 30px 30px;
+	grid-template-areas:
+		"nav"
+		"btn"
+		"hd"
+		"ct"
+		"ft";
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+.date {
+	color: #cdd0cb;
+}
+
+.content {
+	grid-area: ct;
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-row-gap: 10px;
+	color: white;
+}
+
+.cards {
+	display: flex;
+	min-height: 100vh;
+	flex-wrap: wrap;
+}
+
+img {
+	max-width: 100%;
+}
+
+h3 {
+	font: 400 18px/150% "Roboto", sans-serif;
+	color: #cdd0cb;
+	margin: 10px 0 15px 0;
+	text-transform: uppercase;
+}
+
+.writeup {
+	font: 400 18px/150% "Roboto", sans-serif;
+	margin: 15px 0 0 0;
+	color: #cdd0cb;
+}
+
+footer {
+	grid-area: ft;
+	display: flex;
+	justify-content: center;
+	font: 400 18px/150% "Roboto", sans-serif;
+	color: #cdd0cb;
+}
+
+/* LARGER SCREENS */
+@media (min-width: 900px) {
+	.container {
+		width: 75%;
+		margin: auto;
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: minmax(20px, auto);
+		justify-content: center;
+
+		grid-template-areas:
+			"nav"
+			"btn"
+			"hd"
+			"ct"
+			"ft";
+	}
+
+	ul {
+		font: 700 20px/1.6rem "Roboto", sans-serif;
+	}
+
+	.header {
+		margin: 30px 0 0 0;
+		font: 700 18px/2.5rem "Roboto", sans-serif;
+	}
+
+	.content {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(1, 1fr);
+		margin: 30px 0 0 0;
+		column-gap: 40px;
+		row-gap: 20px;
+		color: white;
+	}
+
+	h1 {
+		font-size: 60px;
+	}
+
+	footer {
+		display: flex;
+		justify-content: center;
+		grid-area: ft;
+		font: 400 18px/150% "Roboto", sans-serif;
+		color: #cdd0cb;
+	}
+}
